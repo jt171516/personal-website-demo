@@ -1,1 +1,1 @@
-# project1-jt171516
+# Jeremy Tran CSCE 331 Project 1
