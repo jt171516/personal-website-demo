@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Open Sans", Ariel, Tahoma, Verdana, sans-serif;
+}
+
+header {
+    background: #500000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header nav h2 a{
+    text-decoration: none;
+    color: wheat;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+header nav h2 a:hover {
+    color: white;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding-left: 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: wheat;
+    transition: all 0.3s;
+}
+
+header nav ul li a:hover {
+    color: white;
+}
+
+#hero {
+    color: white;
+    background: #500000;
+    text-align: center;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#hero h1 {
+    padding: 1rem;
+    text-align: center;
+    float: left;
+    padding: 125px 5rem;
+    font-weight: bold;
+}
+
+#hero img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+}
+
+#about {
+    max-width: 1000px;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+#about h2 {
+    padding: 1rem 0;
+}
+
+#more {
+    padding: 1rem 0;
+    text-algin: center;
+}
+
+#more h2 {
+    text-align: center;
+}
+
+#more ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#more ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#more ul li a button {
+    border: 2px solid black;
+    background: white;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    border-radius: 1000px;
+    transition: all 0.3s;
+}
+
+#more ul li a button:hover {
+    border: 2px solid black;
+    background: black;
+    color:white;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem;
+    width: 10rem;
+    border-radius: 1000px;
+}
+
+#portfolio {
+    max-width: 1000px;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+#portfolio h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.project {
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 30px;
+}
+
+.project h2 {
+    margin-bottom: 1rem 2rem;
+    text-align: center;
+}
+
+.project img {
+    float: left;
+    height: 300px;
+    width: 300px;  
+}
+
+.project ul {
+    padding-left: 5%;
+}
