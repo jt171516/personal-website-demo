@@ -136,22 +136,35 @@ header nav ul li a:hover {
 }
 
 .project {
-    padding: 1rem;
     background-color: #f0f0f0;
     border-radius: 30px;
+    height:300px;
 }
 
-.project h2 {
-    margin-bottom: 1rem 2rem;
+.project-description h2 {
+    margin-top: 1rem;
     text-align: center;
+}
+
+.project-description h3 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.project-description ul {
+    padding: 0 2rem;
 }
 
 .project img {
     float: left;
     height: 300px;
-    width: 300px;  
+    width: 40%; 
+    object-fit: cover;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
 }
 
-.project ul {
-    padding-left: 5%;
+.project-description {
+    float: right;
+    width: 60%;
 }
