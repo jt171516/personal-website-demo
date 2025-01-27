@@ -50,6 +50,32 @@ header nav ul li a:hover {
     color: white;
 }
 
+footer {
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+footer button {
+    border: 2px solid black;
+    background: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 80px;
+    border-radius: 1000px;
+    transition: all 0.3s;
+}
+
+footer button:hover {
+    border: 2px solid black;
+    background: black;
+    color:white;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    width: 80px;
+    border-radius: 1000px;
+}
+
 #hero {
     color: white;
     background: #500000;
@@ -59,15 +85,31 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
-#hero h1 {
+#hero a {
+    text-decoration: none;
+    color: white;
+}
+
+#hero-left {
     padding: 1rem;
     text-align: center;
     float: left;
-    padding: 125px 5rem;
+    padding: 115px 5rem;
     font-weight: bold;
 }
 
-#hero img {
+#hero-left img {
+    margin: 1rem 0.5rem 0 0.5rem;
+    width: 30px;
+    height: 30px;
+}
+
+#socials {
+    display: flex;
+    justify-content: center;
+}
+
+#headshot img {
     border-radius: 50%;
     width: 400px;
     height: 400px;
@@ -143,7 +185,7 @@ header nav ul li a:hover {
 .project {
     background-color: #f0f0f0;
     border-radius: 30px;
-    height:300px;
+    height:350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -162,17 +204,13 @@ header nav ul li a:hover {
     margin-bottom: 0.5rem;
 }
 
-.project-description ul {
-    padding: 0 2rem;
-}
-
-.project-description ul li {
-    padding: 0.5rem;
+.project-description p {
+    padding: 1rem;
 }
 
 .project img {
     float: left;
-    height: 300px;
+    height: 100%;
     width: 40%; 
     object-fit: cover;
     border-bottom-left-radius: 30px;
@@ -252,6 +290,80 @@ header nav ul li a:hover {
     padding-bottom: 2rem;
 }
 
-#resume iframe {
+#service-page{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
 
+#service-page h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+#service-page a {
+    text-decoration: none;
+    color: black;
+}
+
+.timeline {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    color: black;
+}
+
+.timeline h3 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+  
+.tl-card {
+    margin: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.tl-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    
+}
+
+.tl-card-desc {
+    padding: 2rem;
+    flex-grow: 1;
+}
+
+.tl-card-desc ul li {
+    padding: 0.5rem;
+}
+  
+.tl-background {
+    background: #f0f0f0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    overflow: hidden;
+}
+  
+.tl-middle {
+    position: relative;
+    background: #500000;
+}
+  
+.tl-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #500000;
+    border-radius: 50%;
+}
+  
+.tl-move-date {
+    text-align: right;
 }
