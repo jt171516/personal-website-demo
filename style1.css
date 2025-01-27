@@ -307,10 +307,10 @@ footer button:hover {
 }
 
 .timeline {
-    padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr 3px 1fr;
+    grid-template-columns: 1fr 4px 1fr;
     color: black;
+    padding: 1rem;
 }
 
 .timeline h3 {
@@ -319,7 +319,7 @@ footer button:hover {
 }
   
 .tl-card {
-    margin: 0 20px 20px 20px;
+    margin: 0 1rem 2rem 1rem;
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -348,7 +348,7 @@ footer button:hover {
     overflow: hidden;
 }
   
-.tl-middle {
+.tl-line {
     position: relative;
     background: #500000;
 }
