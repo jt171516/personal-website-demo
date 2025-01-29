@@ -257,7 +257,6 @@ footer button:hover {
 }
 
 .card {
-    /* flex: 0 1 24%; */
     height: 275px;
     width: 275px;
     background: #f0f0f0;
@@ -307,63 +306,56 @@ footer button:hover {
 }
 
 .timeline {
-    display: grid;
-    grid-template-columns: 1fr 4px 1fr;
-    color: black;
-    padding: 1rem;
+    display:flex;
+    justify-content: center;
 }
 
 .timeline h3 {
     text-align: center;
     padding-bottom: 1rem;
 }
-  
+
+.tl-line {
+    height: 100%;
+    width: 50%;
+    border-left: 5px solid #001d3d;
+}
+
+.tl-circle {
+    width: 15px;
+    height: 15px;
+    background: #fdc500;
+    border-radius: 50%;
+    transform: translate(-10px, 2.5rem);
+}
+
+.tl-date {
+    padding: 1rem;
+}
+
 .tl-card {
+    background: #f0f0f0;
     margin: 0 1rem 2rem 1rem;
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tl-content {
+    padding: 2rem;
+}
+
+.tl-content ul {
+    padding: 0 1rem;
+}
+
+.tl-content ul li {
+    padding: 0.5rem;
 }
 
 .tl-card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    
-}
-
-.tl-card-desc {
-    padding: 2rem;
-    flex-grow: 1;
-}
-
-.tl-card-desc ul li {
-    padding: 0.5rem;
-}
-  
-.tl-background {
-    background: #f0f0f0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 30px;
-    overflow: hidden;
-}
-  
-.tl-line {
-    position: relative;
-    justify-content: center;
-    background: #001d3d;
-    display: flex;
-}
-  
-.tl-circle {
-    position: absolute;
-    top: 0;
-    width: 15px;
-    height: 15px;
-    background: #fdc500;
-    border-radius: 50%;
-}
-  
-.tl-move-date {
-    text-align: right;
+    display: block;
 }
