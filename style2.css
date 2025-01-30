@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Space Mono", Courier New, Consolas;
+    background: #181C14;
+    margin-left: 200px;
+}
+
+body a {
+    text-decoration: none;
+}
+
+nav {
+    padding-top: 3rem;
+    background: #F39F5A;
+    height: 100%;
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    transform: translateX(-200px);
+    font-weight: 500;
+    top: 0;
+    z-index: 0;
+}
+
+nav h2 {
+    padding: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+nav a {
+    color: black;
+}
+
+footer {
+    transform: translateX(-200px);
+    height: 100%;
+    width: 200px;
+    text-align: center;
+}
+
+footer button {
+    background: #F39F5A;
+    border: 1px solid #F39F5A;
+    width: 200px;
+    font-family:"Space Mono", Courier New, Consolas;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
