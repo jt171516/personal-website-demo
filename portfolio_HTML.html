@@ -5,42 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeremy Tran's Portfolio</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono">
 </head>
 <body>
   <header>
     <nav>
-        <h2><a href = "index_HTML.html">Jeremy Tran</a></h2>
-        <ul>
-          <li><a href = "portfolio_HTML.html">Portfolio</a></li>
-          <li><a href = "qualifications_HTML.html">Qualifications</a></li>
-          <li><a href = "service_HTML.html">Service</a></li>
-          <li><a href = "genai.html">Generative AI</a></li>
-        </ul>
-      </nav>
+      <h2><a href = "index_HTML.html">Jeremy Tran</a></h2>
+      <ul>
+        <li><a href = "portfolio_HTML.html">Portfolio</a></li>
+        <li><a href = "qualifications_HTML.html">Qualifications</a></li>
+        <li><a href = "service_HTML.html">Service</a></li>
+        <li><a href = "genai.html">Generative AI</a></li>
+      </ul>
+    </nav>
   </header>
   <div id = "portfolio">
     <h1>Technical Portfolio</h1>
     <div class = "project">
-      <a href = https://tamuthinktank.org>
-        <img src="tamuthinktank.png" alt="TAMU ThinkTank Website Image">
-        <div class = "project-description"> 
-          <h2>TAMU ThinkTank Website Overhaul</h2>
-          <h3>September 2024 - Present</h3>
-          <p>
-            I am currently a member of the TAMU ThinkTank website development team. This is a year-long challenge to overhaul and modernize the front-end and back-end of the organization's website.
-            During the Fall 2024 semester, we were tasked with expanding the single-page website to have multiple pages and a more responsive design using TSX and Tailwind CSS. 
-            I was primarily tasked with working on the "About" page of the new website as well as minor changes on the main page. I am currently working on updating member applications using Prisma.
-          </p>
-        </div>
-      </a>
+      <img src="tamuthinktank.png" alt="TAMU ThinkTank Website Image">
+      <div class = "project-description"> 
+        <a href = https://tamuthinktank.org>
+          <div class = "project-headers">
+            <h2>TAMU ThinkTank Website Overhaul</h2>
+            <h3>September 2024 - Present</h3>
+          </div>
+        </a>
+        <p>
+          I am currently a member of the TAMU ThinkTank website development team. This is a year-long challenge to overhaul and modernize the front-end and back-end of the organization's website.
+          During the Fall 2024 semester, we were tasked with expanding the single-page website to have multiple pages and a more responsive design using TSX and Tailwind CSS. 
+          I was primarily tasked with working on the "About" page of the new website as well as minor changes on the main page. I am currently working on updating member applications using Prisma.
+        </p>
+      </div>
     </div>
     <br>
     <br>
     <div class = "project">
       <img src="startingfromthestemchat.png" alt="Starting From the STEM Website Image">
       <div class = "project-description"> 
-        <h2>Starting From the STEM Website</h2>
-        <h3>September 2024 - Present</h3>
+        <div class = "project-headers">
+          <h2>Starting From the STEM Website</h2>
+          <h3>September 2024 - Present</h3>
+        </div>
         <p>
           As a member of the <a href = "https://www.aggiecodingclub.com/"><i>Aggie Coding Club</i></a>, I am member of the team developing the Starting from the STEM website.
           This is a full-stack TSX Node.js web application intended to help students learn and hone their skills in college engineering core courses such as Calculus and Physics.
@@ -54,8 +59,10 @@
     <div class = "project">
       <img src="carla.png" alt="Autonomous Vehicle Simulation Image">
       <div class = "project-description"> 
-        <h2>Autonomous Vehicle Simulation</h2>
-        <h3>September 2024 - November 2024</h3>
+        <div class = "project-headers">
+          <h2>Autonomous Vehicle Simulation</h2>
+          <h3>September 2024 - November 2024</h3>
+        </div>
         <p>
           During the Fall 2024 semester, I worked on a team to develop an autonomous vehicle simulation using the <a href = "https://carla.org/"><i>CARLA</i></a> simulator as a member of the <a href = "https://www.aggiedatascience.com/"><i>Aggie Data Science Club</i></a>.
           I was a member of the automobile functionality team, where I developed Python scripts to control elements of the simulation and gather raw sensor data simulating a real driving environment.
@@ -68,17 +75,20 @@
     <div class = "project">
       <img src="theremin.png" alt="Theremin Image">
       <div class = "project-description"> 
-        <h2>Analog Theremin</h2>
-        <h3>September 2024 - November 2024</h3>
+        <div class = "project-headers">
+          <h2>Analog Theremin</h2>
+          <h3>September 2024 - November 2024</h3>
+        </div>
         <p>
-          As a member of the <a href = "https://www.hkntamu.com/">Eta Kappa Nu (HKN)</a> chapter at Texas A&M University, I participated in the HKN project team where we developed an analog theremin.
+          As a member of the <a href = "https://www.hkntamu.com/"><i>Eta Kappa Nu (HKN)</i></a> chapter at Texas A&M University, I participated in the HKN project team where we developed an analog theremin.
           We used a schematic to create the physical circuit using only analog components, capable of altering pitch and volume based on the user's hand proximity to the antenna sensors.
         </p>
       </div>
     </div>
   </div>
   <footer>
-    <button>Toggle Style</button>
+    <button type = "button" onclick = "toggleStyle()">Toggle Style</button>
   </footer>
+  <script src="functions.js"></script>
 </body>
 </html>
