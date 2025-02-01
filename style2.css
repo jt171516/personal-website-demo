@@ -202,6 +202,7 @@ footer button {
     margin: 1rem;
     width: auto;
     border-radius: 20px;
+    font-size: 0.9rem;
 }
 
 .project-headers {
@@ -244,6 +245,7 @@ footer button {
     grid-area: p;
     background: #293A80;
     border-radius: 20px;
+    font-size: 0.9rem;
 }
 
 #resume {
@@ -282,6 +284,7 @@ footer button {
 
 #skills ul {
     padding: 0 1rem;
+    font-size: 0.9rem;
 }
 
 #service-page {
@@ -329,6 +332,7 @@ footer button {
     border-radius: 20px;
     grid-area: ul;
     padding: 2rem 2rem 2rem 3rem;
+    font-size: 1.2rem;
 }
 
 .tl-element img {
