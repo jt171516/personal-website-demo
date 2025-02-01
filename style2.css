@@ -91,9 +91,10 @@ footer button {
 }
 
 #socials {
-    display: grid;
-    align-items: vertical;
+    display: flex;
+    flex-direction: column;
     padding-left: 100px;
+    padding-top: 1rem;
 }
 
 #headshot img {
@@ -111,7 +112,8 @@ footer button {
     text-align: center;
     color: white;
     justify-content: right;
-    width: auto;
+    width: calc(100% - 30% - 2rem);
+    float: right;
 }
 
 #about-text {
@@ -120,7 +122,6 @@ footer button {
     margin: 1rem;
     padding: 2rem;
     font-size: 1.1rem;
-    float: right;
 }
 
 #about h2 {
@@ -173,8 +174,7 @@ footer button {
 
 .project {
     display: flex;
-    align-items: flex-start;
-    height: auto;
+    height: 450px;
     width: 100%;
 }
 
@@ -320,12 +320,12 @@ footer button {
 }
 .tl-card h3{
     text-align: center;
-    padding: 1rem;
+    padding-bottom: 1rem;
     grid-area: h3;
 }
 
 .tl-card ul {
-    background: #3282B8;
+    background: #4477CE;
     border-radius: 20px;
     grid-area: ul;
     padding: 2rem 2rem 2rem 3rem;
