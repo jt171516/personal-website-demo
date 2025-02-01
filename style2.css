@@ -6,8 +6,9 @@
 
 body {
     font-family:"Space Mono", Courier New, Consolas;
-    background: #181C14;
-    margin-left: 200px;
+    background: #2C2828;
+    margin-left: 14rem;
+    margin-right: 1rem;
 }
 
 body a {
@@ -16,15 +17,15 @@ body a {
 
 nav {
     padding-top: 3rem;
-    background: #F39F5A;
+    background: #DBEDF3;
     height: 100%;
-    width: 200px;
+    width: 13rem;
     text-align: center;
     position: fixed;
-    transform: translateX(-200px);
-    font-weight: 500;
+    transform: translateX(-14rem);
     top: 0;
     z-index: 0;
+    font-weight: 500;
 }
 
 nav h2 {
@@ -41,18 +42,301 @@ nav a {
 }
 
 footer {
-    transform: translateX(-200px);
-    height: 100%;
+    transform: translateX(-14rem);
     width: 200px;
     text-align: center;
-}
-
-footer button {
-    background: #F39F5A;
-    border: 1px solid #F39F5A;
-    width: 200px;
-    font-family:"Space Mono", Courier New, Consolas;
     position: fixed;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+    bottom: 0;
+}
+
+footer button {
+    background: #DBEDF3;
+    border: 1px solid #DBEDF3;
+    height: 50px;
+    width: 200px;
+    font-family:"Space Mono", Courier New, Consolas;
+    font-weight: 500;
+}
+
+#hero {
+    padding-top: 3rem;
+}
+
+#hero a {
+    text-decoration: none;
+    color: white;
+}
+
+#hero-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+#hero-text img {
+    margin: 1rem 0.5rem 0 0.5rem;
+    width: 30px;
+    height: 30px;
+}
+
+#hero-text h1 {
+    float: left;
+    color: white;
+    padding-bottom: 2rem;
+}
+
+#socials {
+    display: grid;
+    align-items: vertical;
+    padding-left: 100px;
+}
+
+#headshot img {
+    display: inline-block;
+    position: relative;
+    aspect-ratio: 1/1;
+    width: 30%;
+    border-radius: 20px;
+    margin: 1rem;
+    float: left;
+}
+
+#about {
+    display: flex;
+    text-align: center;
+    color: white;
+    justify-content: right;
+    width: auto;
+}
+
+#about-text {
+    background: #293A80;
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 2rem;
+    font-size: 1.1rem;
+    float: right;
+}
+
+#about h2 {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+#more {
+    text-align: center;
+    color: white;
+    margin: 1rem;
+    padding: 2rem;
+    background: #293A80;
+    border-radius: 20px;
+    width: 30%;
+    height: auto;
+    float: left;
+}
+#more ul li {
+    list-style: none;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+#more ul li a button {
+    font-family:"Space Mono", Courier New, Consolas;
+    background: none;
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+
+#portfolio {
+    color: white;
+}
+
+#portfolio h1 {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+#portfolio a {
+    text-decoration: none;
+    color: white;
+}
+
+.project {
+    display: flex;
+    align-items: flex-start;
+    height: auto;
+    width: 100%;
+}
+
+.project img {
+    width: 25vw;
+    min-width: 25vw;
+    height: 450px;
+    order: 2;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 1rem;
+}
+
+.project-description {
+    order: 1;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.project-description p {
+    background: #293A80;
+    height: 450px;
+    padding: 2rem;
+    margin: 1rem;
+    width: auto;
+    border-radius: 20px;
+}
+
+.project-headers {
+    background: #293A80;
+    min-width: 15vw;
+    width: 15vw;
+    height: 450px;
+    padding: 2rem;
+    margin: 1rem;
+    text-align: center;
+    border-radius: 20px;
+    top: 50%;
+}
+
+.project-headers h2 {
+    padding-bottom: 1rem;
+}
+
+#qualifications {
+    color: white;
+    display: grid;
+    grid-template-areas:
+    "h1 h1 h1"
+    "p r r"
+    "s r r";
+}
+
+#qualifications h1 {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: white;
+    grid-area: h1;
+}
+
+#qualifications p {
+    text-align: center;
+    padding: 2rem;
+    margin: 1rem;
+    grid-area: p;
+    background: #293A80;
+    border-radius: 20px;
+}
+
+#resume {
+    grid-area: r;
+    padding: 2rem;
+    margin: 1rem;
+    background: #293A80;
+    border-radius: 20px;
+}
+
+#resume h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#resume iframe {
+    border: none;
+    border-radius: 20px;
+}
+
+#skills {
+    grid-area: s;
+    padding: 2rem;
+    margin: 1rem;
+    background: #293A80;
+    border-radius: 20px;
+}
+
+#skills h2 {
+    text-align: center;
+}
+
+#skills h3 {
+    padding: 1rem 0;
+}
+
+#skills ul {
+    padding: 0 1rem;
+}
+
+#service-page {
+    color: white;
+}
+
+#service-page h1 {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+#service-page a {
+    text-decoration: none;
+    color: white;
+}
+
+.tl-element {
+    background: #293A80;
+    border-radius: 20px;
+    display: grid;
+    margin: 2rem 1rem;
+    padding: 2rem;
+}
+
+.tl-date {
+    text-align: center;
+}
+
+.tl-card {
+    display: grid;
+    grid-template-areas:
+    "h3 h3"
+    "ul img";
+}
+.tl-card h3{
+    text-align: center;
+    padding: 1rem;
+    grid-area: h3;
+}
+
+.tl-card ul {
+    background: #3282B8;
+    border-radius: 20px;
+    grid-area: ul;
+    padding: 2rem 2rem 2rem 3rem;
+}
+
+.tl-element img {
+    justify-self: right;
+    grid-area: img;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    border-radius: 20px;
+    width: 40vw;
+    margin-left: 2rem;
 }

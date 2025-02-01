@@ -90,7 +90,7 @@ footer button:hover {
     color: white;
 }
 
-#hero-left {
+#hero-text {
     padding: 1rem;
     text-align: center;
     float: left;
@@ -98,7 +98,7 @@ footer button:hover {
     font-weight: bold;
 }
 
-#hero-left img {
+#hero-text img {
     margin: 1rem 0.5rem 0 0.5rem;
     width: 30px;
     height: 30px;
@@ -222,21 +222,23 @@ footer button:hover {
     width: 60%;
 }
 
-#area {
+#qualifications h1 {
     background: #001d3d;
     color: white;
     text-align: center;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
-#area h1 {
-    padding: 1rem;
+#interest {
+    background: #001d3d;
 }
 
-#area p {
+#interest p {
     max-width: 1000px;
-    padding: 2rem;
+    padding-bottom: 3rem;
     margin: 0 auto;
+    text-align: center;
+    color: white;
 }
 
 #skills {
@@ -341,15 +343,15 @@ footer button:hover {
     box-shadow: 0 4px 10px 0 grey;
 }
 
-.tl-content {
-    padding: 2rem;
+.tl-card h3 {
+    padding-top: 2rem;
 }
 
-.tl-content ul {
-    padding: 0 1rem;
+.tl-card ul {
+    padding: 0 2rem 2rem 3rem;
 }
 
-.tl-content ul li {
+.tl-card ul li {
     padding: 0.5rem;
 }
 
